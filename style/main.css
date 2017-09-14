@@ -1,0 +1,38 @@
+body{
+  background-color: #c34120;
+  display: flex;
+  flex-flow:nowrap column;
+  align-items: center;
+}
+main{
+  height: 40em;
+  width: 61%;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.stack{
+  width: 360px;
+  margin: 10px auto;
+}
+
+input[type=textarea]{
+  width: 360px;
+  height: 220px;
+  background-color: #ffffb0;
+}
+
+.shift{
+  width: 111px;
+  margin: 5px auto;
+}
+
+.crypt{
+  width: 111px;
+  margin: 5px auto;
+}
+
+.import-text{
+  margin: 5px auto;
+}

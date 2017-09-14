@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cypher</title>
+  <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <header>
+    <h1 class="text-center">The Caesar Cypher</h1>
+  </header>
+  <main>
+    <section class="text-center stack">
+      <form class="encryption" action="index.html" method="post">
+        <input type="textarea" name="" value="Hello, World!">
+        <section class="stack-middle">
+          <button id="cypher" class="crypt" type="submit" name="button">Cypher &darr;</button>
+          <input id="shift" class="shift" type="number" name="" value="4" placeholder="Shift">
+          <button id="decypher" class="crypt" type="submit" name="button">Decypher &uarr;</button>
+        </section>
+        <input class ="encryptedTextArea" type="textarea" name="" value="Encrypted!">
+        <button id="importTextFromAPI" type="submit" name="button">Import Text</button>
+      </form>
+    </section>
+  </main>
+  <script type="text/javascript" src="caesarCypher.js"></script>
+  <script type="text/javascript" src="fetchAPI.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
