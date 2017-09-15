@@ -5,7 +5,7 @@ function elClass(className, i) {
 function elId(IdName) {
   return document.getElementById(IdName);
 }
-var apiUrl = "http://ron-swanson-quotes.herokuapp.com/v2/quotes";
+var apiUrl = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
 
 function getAPI(APIurl, term, field, num){
   return fetch(APIurl+term)
