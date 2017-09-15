@@ -14,18 +14,21 @@
   <main>
     <section class="text-center stack">
       <form class="encryption" action="index.html" method="post">
-        <input type="textarea" name="" value="Hello, World!">
+        <textarea class="unEncryptedText" name="name" rows="8" cols="60" wrap="soft"></textarea>
+        <!-- <input class="unEncryptedText" type="textarea" rows="10" cols="20" wrap="hard" name="" value="Sample Text, enter a number and Hit Cypher!"> -->
         <section class="stack-middle">
           <button id="cypher" class="crypt" type="submit" name="button">Cypher &darr;</button>
-          <input id="shift" class="shift" type="number" name="" value="4" placeholder="Shift">
+          <input id="shift" class="shift" type="number" value="3" placeholder="Shift">
           <button id="decypher" class="crypt" type="submit" name="button">Decypher &uarr;</button>
         </section>
-        <input class ="encryptedTextArea" type="textarea" name="" value="Encrypted!">
+        <textarea class ="encryptedTextArea" name="name" rows="8" cols="60" wrap="hard"></textarea>
+        <!-- <input class ="encryptedTextArea" type="textarea" rows="10" cols="20" wrap="hard" name="" value="Import Cypherd Ron Swanson quote!"> -->
         <button id="importTextFromAPI" type="submit" name="button">Import Text</button>
       </form>
     </section>
   </main>
   <script type="text/javascript" src="caesarCypher.js"></script>
+  <script type="text/javascript" src="caesarDeCypher.js"></script>
   <script type="text/javascript" src="fetchAPI.js"></script>
   <script type="text/javascript" src="index.js"></script>
 </body>

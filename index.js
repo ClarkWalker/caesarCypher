@@ -13,6 +13,7 @@ function getAPI(APIurl, term, field, num){
       return APIvar.json()
         .then(function(content){
           string = content.join(" ");
+          // field.value = caesarCypher(string, num); //to specific
           field.value = caesarCypher(string, num); //to specific
           // console.log(string); //to specific
           return string;
@@ -22,10 +23,9 @@ function getAPI(APIurl, term, field, num){
 var button = elId("importTextFromAPI");
 button.addEventListener("click", function(event){
   event.preventDefault();
-  elClass("encryptedTextArea", 0).value = "";
   shiftNum = elClass("shift", 0).value;
-  console.log(shiftNum);
-  var quote = getAPI(apiUrl, "", elClass("encryptedTextArea", 0), shiftNum);
+  elClass("encryptedTextArea", 0).value = "";
+  getAPI(apiUrl, "", elClass("encryptedTextArea", 0), shiftNum);
   // console.log(quote);
   // elClass("encryptedTextArea", 0).value = quote;
 });
@@ -33,10 +33,18 @@ button.addEventListener("click", function(event){
 var button = elId("decypher");
 button.addEventListener("click", function(event){
   event.preventDefault();
-
+  shiftNum = elClass("shift", 0).value;
+  elClass("unEncryptedText", 0).value = caesarDeCypher(
+    elClass("encryptedTextArea", 0).value, shiftNum
+  );
 });
+
 var button = elId("cypher");
 button.addEventListener("click", function(event){
   event.preventDefault();
+  shiftNum = elClass("shift", 0).value;
+  elClass("encryptedTextArea", 0).value = caesarCypher(
+    elClass("unEncryptedText", 0).value, shiftNum
+  );
 
 });

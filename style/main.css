@@ -11,28 +11,25 @@ main{
   display: flex;
   justify-content: center;
 }
-
 .stack{
   width: 360px;
   margin: 10px auto;
 }
-
-input[type=textarea]{
+textarea{
   width: 360px;
-  height: 220px;
+  height: 180px;
   background-color: #ffffb0;
+  text-align: center;
+  word-wrap: normal;
 }
-
 .shift{
   width: 111px;
   margin: 5px auto;
 }
-
 .crypt{
   width: 111px;
   margin: 5px auto;
 }
-
 .import-text{
   margin: 5px auto;
 }
